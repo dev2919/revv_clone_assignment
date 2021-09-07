@@ -1,0 +1,15 @@
+.footer__seolinks {
+  background: #656c80;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.294) 0px 1px 6px, rgba(0, 0, 0, 0.294) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.294) 0px 1px 6px, rgba(0, 0, 0, 0.294) 0px 1px 4px;
+  border-radius: 2px;
+  padding: 50px 0px 30px;
+}
+
+.footer__seolinks h5 {
+  color: white;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+}

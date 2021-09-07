@@ -1,6 +1,8 @@
 .header {
   width: 100%;
-
+  position: fixed;
+  z-index: 99;
+  background: white;
   >nav {
     height: 1.75rem;
     padding: 0px 0.875rem;
@@ -13,6 +15,7 @@
       font-size: $font-reg;
     }
   }
+  
 
   &__logo {
 

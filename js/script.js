@@ -102,3 +102,16 @@ var swiper5 = new Swiper(".mySwiper5", {
     clickable: true,
   },
 });
+
+myID = document.getElementById("form--fixed");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 300) {
+    myID.classList.remove("hide-on-desktop");
+  } else {
+    myID.classList.add("hide-on-desktop")
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);

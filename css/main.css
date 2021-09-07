@@ -101,6 +101,9 @@ a, a:visited {
 
 .header {
   width: 100%;
+  position: fixed;
+  z-index: 99;
+  background: white;
 }
 
 .header > nav {
@@ -343,11 +346,21 @@ a, a:visited {
   line-height: 3rem;
 }
 
+.hero {
+  padding: 3rem 0 0 0;
+}
+
+@media (min-width: 769px) {
+  .hero {
+    padding: 6rem 0 0 0;
+  }
+}
+
 .hero .form--desktop {
   margin-top: 0rem !important;
   padding: 3rem 2rem;
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   left: 15%;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
@@ -608,6 +621,47 @@ a, a:visited {
   background: #000;
   border-radius: 50px;
   opacity: 0.8;
+}
+
+.form--fixed {
+  max-width: 100% !important;
+  position: fixed;
+  top: 90px;
+  z-index: 999;
+}
+
+.form--fixed .hero__carousel__form__city {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+.form--fixed .hero__carousel__form__city .inputWrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 46px;
+  border: 1px solid #ddd !important;
+  margin: 0 1rem;
+  border-radius: 4px;
+}
+
+.form--fixed .hero__carousel__form__city input {
+  border: none !important;
+  margin: 0 1rem;
+  border-radius: 4px;
+}
+
+.form--fixed .hero__carousel__form__city .startDate,
+.form--fixed .hero__carousel__form__city .endDate {
+  margin: 0 1rem;
+  border-radius: 4px;
+}
+
+.form--fixed .hero__carousel__form__city .hero__carousel__form__button {
+  width: 270px;
+  margin: 0 1rem;
 }
 
 .inforgrahpic__mySwiper3 {
