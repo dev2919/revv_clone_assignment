@@ -66,6 +66,9 @@ body{
     align-items: center;
   }
 
+	&-col{
+		flex-direction: column;
+	}
 }
 
 a, a:visited{

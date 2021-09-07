@@ -21,7 +21,7 @@
 		z-index: 10;
 		flex-direction: column;
 		border-radius: 4px;
-
+    margin: auto;
 		&__tabs {
 			width: 100%;
 
@@ -227,11 +227,7 @@
 
 	}
 
-	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 72px;
-    left: 0;
-    width: 100%;
-}
+
 
 	.swiper-pagination-bullet {
 		width: 4px;

@@ -1,0 +1,98 @@
+.promos {
+  margin: 1rem 0;
+
+  &__press {
+
+    h2 {
+      text-align: center;
+    }
+
+    .small-line-green {
+      width: 30px;
+      height: 2px;
+      margin-top: 8px;
+      border-top: 1px solid #00b9b4;
+    }
+
+    &__imgwrapper {
+      img {
+        max-width: 90px;
+      }
+
+      &--desktop {
+        img {
+          max-width: 15rem;
+        }
+      }
+    }
+  }
+
+  &__download {
+    margin-bottom: 3rem;
+
+    &__prallaxbg {
+      height: 600px;
+      width: 100%;
+      background-image: url('../images/backgroundDownloadRevvApp.jpg');
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+      .preview {
+        margin-right: 10em;
+
+        h2 {
+          font-size: $font-large;
+          font-weight: $light-w;
+          margin-bottom: 2rem;
+
+          span {
+            font-weight: $medium-w;
+          }
+        }
+
+        .imgwrapper {
+          display: flex;
+          align-items: flex-end;
+
+          &:hover {
+            img {
+              &:nth-child(1) {
+                position: relative;
+                left: 170px;
+                top: -34px;
+              }
+
+              &:nth-child(2) {
+                position: relative;
+                right: 170px;
+                top: 25px;
+              }
+            }
+          }
+        }
+
+        img {
+          transition: 1s ease;
+
+          &:nth-child(1) {
+            width: 46%;
+
+            position: relative;
+            left: 0;
+            top: -0;
+          }
+
+          &:nth-child(2) {
+            width: 41%;
+            position: relative;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+
+    }
+  }
+}

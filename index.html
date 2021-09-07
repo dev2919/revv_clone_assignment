@@ -13,8 +13,14 @@
 
 <body>
 
+  <style>
+    .container {
+      padding: 1rem max(1rem, calc(50% - 585px)) !important;
+    }
+  </style>
+
   <header class="header">
-    <nav class="flex flex-jc-c flex-ai-c">
+    <nav class="flex flex-jc-c flex-ai-c container">
       <a href="#" class="header__toggle hide-on-desktop" id="header__toggle">
         <img class="header__toggle__hamburgerBtn" src="./images/hamburger_icon.png" alt="hamburger_icon">
       </a>
@@ -25,7 +31,7 @@
       </a>
 
 
-      <div class="header__menu header__links hide-on-desktop" id="header__menu">
+      <div class="header__menu header__links hide-on-desktop " id="header__menu">
         <div class="header__menu__wrapper flex">
           <div class="header__menu__profile flex ">
             <div class="userAvatar flex flex-jc-c">
@@ -76,7 +82,7 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <div class="hero__carousel__form flex  flex-ai-c hide-on-desktop">
+    <div class="hero__carousel__form flex  flex-ai-c hide-on-desktop container">
 
       <div class="hero__carousel__form__tabs flex flex-jc-c">
         <input type="radio" class="stv-radio-tab" name="radioTabTest" value="1" id="Mobtab1" checked />
@@ -186,9 +192,14 @@
   </section>
 
   <section class="inforgrahpic">
+
     <div class="inforgrahpic__bannerCarouselContainer--desktop hide-on-mobile">
-      <div class="inforgrahpic__bannerCarouselContainer__controls">
-        
+      <div class="topwrapper flex flex-ai-c flex-jc-sb">
+        <p>Sanitized & safe cars</p>
+        <div class="inforgrahpic__bannerCarouselContainer--desktop__controls flex flex-ai-c flex-jc-c">
+          <div class="mySwiper2-button-next"><img src="./images/arrowleft.png" alt=""></div>
+          <div class="mySwiper2-button-prev"><img src="./images/arrowright.png" alt=""></div>
+        </div>
       </div>
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
@@ -197,25 +208,367 @@
           <div class="swiper-slide"><img src="./images/banner-sanitised03.webp" alt=""></div>
           <div class="swiper-slide"><img src="./images/mask-group125.webp" alt=""></div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+
+    <div class="inforgrahpic__bannerCarouselContainer--desktop hide-on-mobile inforgrahpic__mySwiper3">
+      <div class="topwrapper flex flex-ai-c flex-jc-sb">
+        <p>Featured</p>
+        <div class="inforgrahpic__bannerCarouselContainer--desktop__controls flex flex-ai-c flex-jc-c">
+          <div class="mySwiper3-button-next"><img src="./images/arrowleft.png" alt=""></div>
+          <div class="mySwiper3-button-prev"><img src="./images/arrowright.png" alt=""></div>
+        </div>
+      </div>
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_01_Hyundai_Subscription.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_02_Mahindra_Subscription.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inforgrahpic__bannerCarouselContainer--mobile hide-on-desktop">
+      <div class="topwrapper container flex flex-ai-c flex-jc-sb">
+        <p>Sanitized & safe cars</p>
+      </div>
+      <div class="swiper mySwiper4 container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/banner-sanitised01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/banner-sanitised02.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/banner-sanitised03.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/mask-group125.webp" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inforgrahpic__bannerCarouselContainer--mobile inforgrahpic__mySwiper3 hide-on-desktop">
+      <div class="topwrapper container flex flex-ai-c flex-jc-sb">
+        <p>Featured</p>
+      </div>
+      <div class="swiper mySwiper5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_01_Hyundai_Subscription.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_02_Mahindra_Subscription.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inforgrahpic__whyrevv--mobile hide-on-desktop">
+
+      <h2>Why revv</h2>
+      <hr class="small-line-green">
+
+      <div class="inforgrahpic__whyrevv--mobile__card flex flex-col flex-ai-c flex-jc-c">
+        <div class="inforgrahpic__whyrevv--mobile__card__img flex flex-ai-c flex-jc-c">
+          <img src="./images/icon1.png" alt="icon1">
+        </div>
+        <div class="inforgrahpic__whyrevv--mobile__card__text">
+          Multiple products to <br>
+          meet all your self-drive needs
+        </div>
+        <hr class="btn-grey-color">
+      </div>
+
+      <div class="inforgrahpic__whyrevv--mobile__card flex flex-col flex-ai-c flex-jc-c">
+        <div class="inforgrahpic__whyrevv--mobile__card__img flex flex-ai-c flex-jc-c">
+          <img src="./images/icon2.png" alt="icon1">
+        </div>
+        <div class="inforgrahpic__whyrevv--mobile__card__text">
+          Freedom to choose <br>prices with or without fuel
+        </div>
+        <hr class="btn-grey-color">
+      </div>
+
+      <div class="inforgrahpic__whyrevv--mobile__card flex flex-col flex-ai-c flex-jc-c">
+        <div class="inforgrahpic__whyrevv--mobile__card__img flex flex-ai-c flex-jc-c">
+          <img src="./images/icon3.png" alt="icon1">
+        </div>
+        <div class="inforgrahpic__whyrevv--mobile__card__text">
+          100% Doorstep<br>delivery & return
+        </div>
+        <hr class="btn-grey-color">
+      </div>
+
+      <div class="inforgrahpic__whyrevv--mobile__card flex flex-col flex-ai-c flex-jc-c">
+        <div class="inforgrahpic__whyrevv--mobile__card__img flex flex-ai-c flex-jc-c">
+          <img src="./images/icon4.png" alt="icon1">
+        </div>
+        <div class="inforgrahpic__whyrevv--mobile__card__text">
+          Unlimited <br>Kms option
+        </div>
+      </div>
+
+    </div>
+
+    <p class="inforgrahpic__howitworks--desktop__head hide-on-mobile">Sanitized & safe cars</p>
+    <div class="inforgrahpic__howitworks--desktop hide-on-mobile flex flex-jc-c flex-ai-c">
+
+      <hr class="d-none d-sm-block htwDashedLine ">
+      <div class="inforgrahpic__howitworks--desktop__card  flex flex-col flex-jc-c flex-ai-c">
+        <div class="icon flex flex-jc-c flex-col flex-ai-c"><img src="./images/car-icons.png" alt=""></div>
+        <div class="text">
+          <h3>Receive</h3>
+          <p>We will deliver the car to your doorstep</p>
+        </div>
+      </div>
+
+      <div class="inforgrahpic__howitworks--desktop__card  flex flex-col flex-jc-c flex-ai-c">
+        <div class="icon flex flex-jc-c flex-col flex-ai-c"><img src="./images/wheel.png" alt=""></div>
+        <div class="text">
+          <h3>Drive</h3>
+          <p>Enjoy your Revv self drive</p>
+        </div>
+      </div>
+
+
+      <div class="inforgrahpic__howitworks--desktop__card  flex flex-col flex-jc-c flex-ai-c">
+        <div class="icon flex flex-jc-c flex-col flex-ai-c"><img src="./images/rotate-img.png" alt=""></div>
+        <div class="text">
+          <h3>Return</h3>
+          <p>Get the car back to your preferred return location, and we will take it from there</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="inforgrahpic__howitworks--desktop__head hide-on-mobile">Why Revv</p>
+    <div class="inforgrahpic__whyrevv--desktop hide-on-mobile  flex flex-jc-c flex-ai-c flex-col">
+      <div class="cardwrapper flex flex-jc-c flex-ai-c">
+
+        <div class="card flex flex-jc-c flex-ai-c flex-col">
+          <div class="card__container flex flex-jc-c flex-ai-c flex-col">
+            <h3>100% Delivery & Pickup</h3>
+            <img class="card__icon" src="./images/downcircle.png" alt="hovericon">
+            <p class="card__body">For every booking, every car model. With industry leading on-time performance. We love
+              to make things easy for you!</p>
+          </div>
+        </div>
+
+        <div class="card flex flex-jc-c flex-ai-c flex-col">
+          <div class="card__container flex flex-jc-c flex-ai-c flex-col">
+            <h3>No Limits</h3>
+            <img class="card__icon" src="./images/downcircle.png" alt="hovericon">
+            <p class="card__body">For every booking, every car model. With industry leading on-time performance. We love
+              to make things easy for you!</p>
+          </div>
+        </div>
+
+        <div class="card flex flex-jc-c flex-ai-c flex-col">
+          <div class="card__container flex flex-jc-c flex-ai-c flex-col">
+            <h3>New Fleet</h3>
+            <img class="card__icon" src="./images/downcircle.png" alt="hovericon">
+            <p class="card__body">For every booking, every car model. With industry leading on-time performance. We love
+              to make things easy for you!</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cardwrapper flex flex-jc-c flex-ai-c">
+
+        <div class="card flex flex-jc-c flex-ai-c flex-col">
+          <div class="card__container flex flex-jc-c flex-ai-c flex-col">
+            <h3>0 Hidden Charges</h3>
+            <img class="card__icon" src="./images/downcircle.png" alt="hovericon">
+            <p class="card__body">For every booking, every car model. With industry leading on-time performance. We love
+              to make things easy for you!</p>
+          </div>
+        </div>
+
+        <div class="card flex flex-jc-c flex-ai-c flex-col">
+          <div class="card__container flex flex-jc-c flex-ai-c flex-col">
+            <h3>Limited Liability</h3>
+            <img class="card__icon" src="./images/downcircle.png" alt="hovericon">
+            <p class="card__body">For every booking, every car model. With industry leading on-time performance. We love
+              to make things easy for you!</p>
+          </div>
+        </div>
+
+        <div class="card flex flex-jc-c flex-ai-c flex-col">
+          <div class="card__container flex flex-jc-c flex-ai-c flex-col">
+            <h3>Booking in 2 Minutes</h3>
+            <img class="card__icon" src="./images/downcircle.png" alt="hovericon">
+            <p class="card__body">For every booking, every car model. With industry leading on-time performance. We love
+              to make things easy for you!</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="promos">
+    <div class="promos__download hide-on-mobile">
+      <div class="promos__download__prallaxbg flex flex-jc-c flex-ai-c">
+        <div class="preview">
+          <h2>Download <span>The Revv App</span></h2>
+          <div class="imgwrapper ">
+            <img src="./images/mobile-img-03.png" alt="">
+            <img src="./images/mobile-img-01.png" alt="">
+          </div>
+        </div>
+        <div class="downloads flex flex-col flex-jc-c flex-ai-c">
+          <h3>Available on</h3>
+          <div class="imgwrapper">
+            <img src="./images/g-play-img.png" alt=""><img src="./images/app-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promos__press">
+      <h2>Press Coverage</h2>
+      <hr class="small-line-green">
+      <div class="promos__press__imgwrapper hide-on-desktop flex flex-ai-c flex-jc-c">
+        <img src="./images/businessinsider.png" alt="businessinsider">
+        <img src="./images/the-hindu-newpaper.png" alt="the-hindu-newpaper">
+        <img src="./images/The-Economic-Times.png" alt="The-Economic-Times">
+        <img src="./images/Indian_express.png" alt="Indian_express">
+      </div>
+      <div class="promos__press__imgwrapper--desktop hide-on-mobile flex flex-ai-c flex-jc-c">
+        <img src="./images/businessinsider.png" alt="businessinsider">
+        <img src="./images/the-hindu-newpaper.png" alt="the-hindu-newpaper">
+        <img src="./images/The-Economic-Times.png" alt="The-Economic-Times">
+        <img src="./images/Indian_express.png" alt="Indian_express">
       </div>
     </div>
   </section>
 
-  <section class="promos">
-
-  </section>
-
   <section class="reviews">
+    <div class="reviews__stats">
+      <h3><span>Our Journey</span> so far</h3>
+      <div class="statwrapper flex flex-jc-sb">
+        <div class="stat">
+          <img src="./images/ic-happy-cus.svg" alt="happy" class="icon">
+          <h4 class="head">1Mn+</h4>
+          <p class="body">Happy Revvers</p>
+        </div>
 
+        <div class="stat">
+          <img src="./images/ic-across-india.svg" alt="happy" class="icon">
+          <h4 class="head">22+ Cities</h4>
+          <p class="body">Across India</p>
+        </div>
+
+        <div class="stat">
+          <img src="./images/ic-subscription.svg" alt="happy" class="icon">
+          <h4 class="head">50Mn+</h4>
+          <p class="body">Kms Travelled</p>
+        </div>
+
+        <div class="stat">
+          <img src="./images/ic-customer-rating.svg" alt="happy" class="icon">
+          <h4 class="head">4.8 / 5</h4>
+          <p class="body">20k+ reviewers</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="inforgrahpic__bannerCarouselContainer--desktop hide-on-mobile inforgrahpic__mySwiper3">
+      <div class="topwrapper flex flex-ai-c flex-jc-sb">
+        <p class="reviews--desktop__head" style="margin: 0;"><span>What our</span> Customers are saying</p>
+        <div class="inforgrahpic__bannerCarouselContainer--desktop__controls flex flex-ai-c flex-jc-c">
+          <div class="mySwiper3-button-next"><img src="./images/arrowleft.png" alt=""></div>
+          <div class="mySwiper3-button-prev"><img src="./images/arrowright.png" alt=""></div>
+        </div>
+      </div>
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_01_testimonial.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_02_testimonial.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/desktop-banner-03-testimonial.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inforgrahpic__bannerCarouselContainer--mobile inforgrahpic__mySwiper3 hide-on-desktop">
+      <div class="topwrapper container flex flex-ai-c flex-jc-sb">
+        <p class="reviews--desktop__head" style="margin: 0;"><span>What our</span> Customers are saying</p>
+      </div>
+      <div class="swiper mySwiper5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_01_testimonial.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/Desktop_Banner_02_testimonial.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/desktop-banner-03-testimonial.png" alt=""></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
+  <section class="footer">
+    <div class="footer__seolinks container hide-on-mobile">
+      <h5>Serviceable Cities</h5>
+      <div class="linkswrapper flex flex-jc-sb flex-ai-c ">
+        <ul class="listHeight" style="list-style: none; padding-left: 0px;">
+          <li><a class="textLinkCSS" href="/car-rental/bangalore">Car Rental in Bangalore</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/hyderabad">Car Rental in Hyderabad</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/mumbai">Car Rental in Mumbai</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/delhi-ncr">Car Rental in Delhi-NCR</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/chennai">Car Rental in Chennai</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/pune">Car Rental in Pune</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/kolkata">Car Rental in Kolkata</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/ahmedabad">Car Rental in Ahmedabad</a></li>
+        </ul>
+        <ul class="listHeight" style="list-style: none; padding-left: 0px;">
+          <li><a class="textLinkCSS" href="/car-rental/bangalore">Car Rental in Bangalore</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/hyderabad">Car Rental in Hyderabad</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/mumbai">Car Rental in Mumbai</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/delhi-ncr">Car Rental in Delhi-NCR</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/chennai">Car Rental in Chennai</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/pune">Car Rental in Pune</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/kolkata">Car Rental in Kolkata</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/ahmedabad">Car Rental in Ahmedabad</a></li>
+        </ul>
+        <ul class="listHeight" style="list-style: none; padding-left: 0px;">
+          <li><a class="textLinkCSS" href="/car-rental/bangalore">Car Rental in Bangalore</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/hyderabad">Car Rental in Hyderabad</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/mumbai">Car Rental in Mumbai</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/delhi-ncr">Car Rental in Delhi-NCR</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/chennai">Car Rental in Chennai</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/pune">Car Rental in Pune</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/kolkata">Car Rental in Kolkata</a></li>
+          <li><a class="textLinkCSS" href="/car-rental/ahmedabad">Car Rental in Ahmedabad</a></li>
+        </ul>
+      </div>
+    </div>
 
-  </footer>
+    <footer class="flex flex-jc-sb flex-ai-c">
+      <div class="wrapper container flex flex-jc-sb">
+        <div class="footer__socials flex flex-jc-c flex-col">
+          <div class="logo"><img src="./images/revvLogo.png" alt=""></div>
+          <div class="socials flex flex-jc-sb">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+          </div>
+        </div>
+        <div class="footer__links">
+          <ul class="listHeight" style="list-style: none;">
+            <li><a class="textLinkCSS" href="/">Home</a></li>
+            <li><a class="textLinkCSS" href="/open">Subscriptions</a></li>
+            <li><a class="textLinkCSS" href="/tariffs">Tariffs</a></li>
+            <li><a class="textLinkCSS" href="/faq">FAQ</a></li>
+            <li><a class="textLinkCSS" href="/policy">Policy</a></li>
+            <li><a class="textLinkCSS" href="https://www.revv.co.in/blogs/" target="blank">Blog</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Have Questions?</h3>
+          <p>24/7 Customer Support</p>
+
+          <h3><a href="#">Contact us</a></h3>
+          <h3><a href="#">+91-9250035555</a></h3>
+          <h3><a href="#">care@revv.co.in</a></h3>
+          
+        </div>
+      </div>
+    </footer>
+  </section>
 
   <script src="./js/script.js"></script>
-
+  <script src="https://kit.fontawesome.com/79cbe590ec.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

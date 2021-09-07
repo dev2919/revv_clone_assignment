@@ -15,7 +15,7 @@ function modifyPosEnter() {
   header__menu.classList.add("header__menu--enter")
 }
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -25,7 +25,71 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".mySwiper2-button-prev",
+    prevEl: ".mySwiper2-button-next",
+  },
+});
+
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 2,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".mySwiper3-button-prev",
+    prevEl: ".mySwiper3-button-next",
+  },
+});
+
+var swiper4 = new Swiper(".mySwiper4", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiper5 = new Swiper(".mySwiper5", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiper5 = new Swiper(".mySwiper5", {
   slidesPerView: "auto",
   spaceBetween: 24,
   loop: true,

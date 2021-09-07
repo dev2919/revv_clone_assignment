@@ -2,11 +2,12 @@
   width: 100%;
 
   >nav {
-    height: 3.75rem;
+    height: 1.75rem;
     padding: 0px 0.875rem;
     background: $blueToGreenGradient;
 
     @media (min-width: $desktopSize) {
+      height: 3.75rem;
       justify-content: space-between !important;
       background: $White;
       font-size: $font-reg;
@@ -100,7 +101,8 @@
     left: -100%;
     width: 100%;
     display: flex;
-    z-index: 10;
+    z-index: 100;
+
     &--exit {
       animation: exit 300ms ease-in-out forwards;
     }
@@ -175,7 +177,8 @@
         font-weight: $medium-w;
       }
 
-      .email , .number {
+      .email,
+      .number {
         font-size: 13px;
       }
 
