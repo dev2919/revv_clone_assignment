@@ -1,0 +1,9 @@
+nav {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1em;
+  left: 0;
+}

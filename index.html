@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Drive Car Rental | Safe, Sanitized Car Subscription with Revv</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="flex flex-jc-c flex-ai-c">
+      <a href="#" class="header__toggle hide-on-desktop" id="header__toggle">
+        <img class="header__toggle__hamburgerBtn" src="./images/hamburger_icon.png" alt="hamburger_icon">
+      </a>
+
+      <a href="#" class="header__logo">
+        <img class="header__logo--dekstop hide-on-mobile" src="./images/logo.svg" alt="Revv">
+        <img class="header__logo--mobile hide-on-desktop" src="./images/moblogo.png" alt="Revv">
+      </a>
+
+
+      <div class="header__menu header__links hide-on-desktop" id="header__menu">
+        <div class="header__menu__wrapper flex">
+          <div class="header__menu__profile flex ">
+            <div class="userAvatar flex flex-jc-c">
+              <img src="./images/ic-profile-menu.svg" alt="ic-profile-menu">
+            </div>
+            <div class="userData flex flex-jc-c">
+              <span class="name">Devesh Pawar</span>
+              <span class="email">dev@gmail.com</span>
+              <span class="number">+91 836984745</span>
+            </div>
+          </div>
+          <a href="#">Car Rental</a>
+          <a href="#">Car Subscription</a>
+          <a href="#">Hyundai Subscription</a>
+          <a href="#">Mahindra Subscription</a>
+          <a href="#">My Bookings</a>
+          <a href="#">Tariff – Car Rental</a>
+          <a href="#">How it Works - Car Subscription</a>
+          <a href="#">Subscribe Vs Buy - Car Subscription</a>
+          <a href="#">FAQs</a>
+          <a href="#">Policy – Car Rental</a>
+          <span class="header__links__promo"><a href="#">Mahindra Subscription</a></span>
+          <span class="header__links__promo"><a href="#">Hyundai Subscription</a></span>
+        </div>
+        <div class="closeSpace" id="closeSpace"></div>
+      </div>
+      </div>
+
+      <div class="header__links links--desktop">
+        <span class="header__links__promo "><a href="#"><span>Mahindra</span> Subscription</a></span>
+        <span class="header__links__promo"><a href="#"><span>Hyundai</span> Subscription</a></span>
+        <a href="#">How it Works</a>
+        <a href="#">Subscribe Vs Buy</a>
+        <a href="#">FAQs</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <!-- Swiper -->
+    <div class="hero__carousel swiper mySwiper hide-on-desktop">
+      <div class="swiper-wrapper hero__carousel--mobile ">
+        <div class="swiper-slide"><img src="./images/LT_Home_Banner_1_Mweb.jpg" alt="Home_Banner_1"></div>
+        <div class="swiper-slide"><img src="./images/LT_Home_Banner_2_Mweb.png" alt="Home_Banner_1"></div>
+        <div class="swiper-slide"><img src="./images/LT_Home_Banner_3_Mweb.png" alt="Home_Banner_1"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="hero__carousel__form flex  flex-ai-c hide-on-desktop">
+
+      <div class="hero__carousel__form__tabs flex flex-jc-c">
+        <input type="radio" class="stv-radio-tab" name="radioTabTest" value="1" id="Mobtab1" checked />
+        <label for="Mobtab1" class="flex flex-jc-c flex-ai-c">
+          <p>Rentals</p> <span>For hours & days</span>
+        </label>
+        <input type="radio" class="stv-radio-tab" name="radioTabTest" value="2" id="Mobtab2" />
+        <label for="Mobtab2" class="flex flex-jc-c flex-ai-c">
+          <p>Subscription</p> <span>For months & years</span>
+        </label>
+      </div>
+
+      <div class="hero__carousel__form__text flex flex-jc-c flex-ai-c">
+        <img src="./images/logo-rentals.svg" alt="logo-rentals">
+        <p>Car Rental in Mumbai</p>
+      </div>
+
+      <div class="hero__carousel__form__city flex flex-jc-c flex-ai-c">
+        <label for="cityText" class="InputText flex flex-jc-c flex-ai-c">City</label>
+        <div class="inputWrapper flex flex-ai-c flex-jc-c">
+          <img src="./images/locationIcon.png" alt="">
+          <input class="cityText" type="text" value="Mumbai" id="cityText">
+        </div>
+      </div>
+
+      <div class="hero__carousel__form__dates flex flex-jc-c flex-ai-c">
+        <div class="startDate">
+          <div class="inputWrapper flex flex-ai-c flex-jc-c">
+            <img src="./images/locationIcon.png" alt="">
+            <input class="cityText" type="text" placeholder="Start Date" id="cityText">
+          </div>
+        </div>
+        <div class="endDate">
+          <div class="inputWrapper flex flex-ai-c flex-jc-c">
+            <input class="cityText" type="text" placeholder="End Date" id="cityText">
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__carousel__form__button flex flex-ai-c flex-jc-c">Search</div>
+    </div>
+
+    <div class="hero__carousel swiper mySwiper hide-on-mobile">
+      <div class="hero__carousel__form form--desktop flex  flex-ai-c">
+
+        <div class="hero__carousel__form__tabs flex flex-jc-c">
+          <input type="radio" class="stv-radio-tab" name="radioTabTest" value="1" id="tab1" checked />
+          <label for="tab1" class="flex flex-jc-c flex-ai-c">
+            <p>Rentals</p> <span>For hours & days</span>
+          </label>
+          <input type="radio" class="stv-radio-tab" name="radioTabTest" value="2" id="tab2" />
+          <label for="tab2" class="flex flex-jc-c flex-ai-c">
+            <p>Subscription</p> <span>For months & years</span>
+          </label>
+        </div>
+
+        <div class="hero__carousel__form__text flex flex-jc-c flex-ai-c">
+          <img src="./images/logo-rentals.svg" alt="logo-rentals">
+          <p>Car Rental in Mumbai</p>
+        </div>
+
+        <div class="hero__carousel__form__city flex flex-jc-c flex-ai-c">
+          <label for="cityText" class="InputText flex flex-jc-c flex-ai-c">City</label>
+          <div class="inputWrapper flex flex-ai-c flex-jc-c">
+            <img src="./images/locationIcon.png" alt="">
+            <input class="cityText" type="text" value="Mumbai" id="cityText">
+          </div>
+        </div>
+
+        <div class="hero__carousel__form__dates flex flex-jc-c flex-ai-c">
+          <div class="startDate">
+            <div class="inputWrapper flex flex-ai-c flex-jc-c">
+              <img src="./images/locationIcon.png" alt="">
+              <input class="cityText" type="text" placeholder="Start Date" id="cityText">
+            </div>
+          </div>
+          <div class="endDate">
+            <div class="inputWrapper flex flex-ai-c flex-jc-c">
+              <input class="cityText" type="text" placeholder="End Date" id="cityText">
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__carousel__form__button flex flex-ai-c flex-jc-c">Search</div>
+      </div>
+
+      <div class="swiper-wrapper hero__carousel--desktop">
+        <div class="swiper-slide">
+          <div class="hero__carousel__slideBG flex ">
+            <div class="boxu"></div><img src="./images/LT_Desktop_1_FG.webp" alt="Home_Banner_1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__carousel__slideBG flex ">
+            <div class="boxu"></div><img src="./images/LT_Desktop_2_FG.webp" alt="Home_Banner_1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__carousel__slideBG flex ">
+            <div class="boxu"></div><img src="./images/LT_Desktop_3_FG.webp" alt="Home_Banner_1">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+
+  <section class="inforgrahpic">
+    <div class="inforgrahpic__bannerCarouselContainer--desktop hide-on-mobile">
+      <div class="inforgrahpic__bannerCarouselContainer__controls">
+        
+      </div>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/banner-sanitised01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./images/banner-sanitised02.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/banner-sanitised03.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./images/mask-group125.webp" alt=""></div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="promos">
+
+  </section>
+
+  <section class="reviews">
+
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

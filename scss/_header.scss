@@ -1,0 +1,208 @@
+.header {
+  width: 100%;
+
+  >nav {
+    height: 3.75rem;
+    padding: 0px 0.875rem;
+    background: $blueToGreenGradient;
+
+    @media (min-width: $desktopSize) {
+      justify-content: space-between !important;
+      background: $White;
+      font-size: $font-reg;
+    }
+  }
+
+  &__logo {
+
+    &--mobile {
+      height: 2.25rem;
+    }
+
+    &--desktop {
+      height: 2.875rem;
+    }
+  }
+
+  &__toggle {
+    //Mobile Menu
+
+    &__hamburgerBtn {
+      height: 1.5rem;
+      position: absolute;
+      top: 1rem;
+      left: 1.25rem;
+    }
+  }
+
+  &__links {
+    a {
+      color: $Black;
+      font-size: $font-sm;
+      font-weight: $medium-w;
+
+      &:hover {
+        color: $cyan
+      }
+
+      @media (min-width: $desktopSize) {
+        margin: 0px 20px 0;
+        color: $Gray;
+      }
+
+    }
+
+    &__promo {
+
+      @media (min-width: $desktopSize) {
+        color: $Black;
+        border: 1px solid rgb(219, 220, 229);
+        margin-top: 0;
+        padding: 0.6rem 0;
+        border-radius: 0.313rem;
+        min-width: 10.375rem;
+        color: $Black;
+
+        span {
+          font-size: $font-reg;
+          font-weight: $bold-w;
+          color: $Black !important;
+        }
+
+        margin: 0px 20px 0;
+
+      }
+    }
+
+  }
+
+  .links--mobile {
+    @media (min-width: $desktopSize) {
+      display: none;
+    }
+  }
+
+  .links--desktop {
+    display: none;
+
+    @media (min-width: $desktopSize) {
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    background: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    &--exit {
+      animation: exit 300ms ease-in-out forwards;
+    }
+
+    &--enter {
+      animation: enter 300ms ease-in-out forwards;
+    }
+
+    @keyframes exit {
+      from {
+        left: 0;
+        background: rgba(0, 0, 0, 0.54);
+      }
+
+      20% {
+        background: rgba(0, 0, 0, 0);
+      }
+
+      to {
+        left: -100%;
+        background: rgba(0, 0, 0, 0);
+      }
+    }
+
+    @keyframes enter {
+      from {
+        left: -100%;
+        background: rgba(0, 0, 0, 0);
+
+      }
+
+      80% {
+        background: rgba(0, 0, 0, 0);
+      }
+
+      to {
+        left: 0;
+        background: rgba(0, 0, 0, 0.54);
+
+      }
+    }
+
+    .closeSpace {
+      height: 100vh;
+      width: 10%;
+      // background:rgba(0, 0, 0, 0.54);
+    }
+
+    &__wrapper {
+      width: 90%;
+      height: 100vh;
+      flex-direction: column;
+      background: white;
+    }
+
+    &__profile {
+      margin-bottom: 0px;
+      align-items: center;
+      padding: 0px 26px;
+      height: 125px;
+      background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
+      align-items: center;
+      color: $White;
+
+    }
+
+    .userData {
+      flex-direction: column;
+
+      .name {
+        font-size: $font-reg;
+        font-weight: $medium-w;
+      }
+
+      .email , .number {
+        font-size: 13px;
+      }
+
+      span {
+        padding: 0px 16px;
+        line-height: 1.5rem;
+      }
+    }
+
+    .userAvatar {
+      height: 46px;
+      width: 46px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      vertical-align: middle;
+
+      img {
+        height: 35px;
+        padding-top: 8px;
+      }
+    }
+
+    a {
+      padding-left: 1.25rem;
+      line-height: 3rem;
+    }
+  }
+
+}
